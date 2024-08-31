@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Concert One", sans-serif;
+  background-color: #c2daff;
+}
+
+section#dashboard_gastos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1800px;
+  margin: 0 auto;
+}
