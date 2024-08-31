@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eddbe9;
+  font-family: "Concert One", sans-serif;
+}
