@@ -1,7 +1,6 @@
 import React, { FormEvent, MouseEventHandler, useRef, useState } from "react";
 import style from "./sidebarStyle.module.scss";
 import logoImg from "../../assets/logo.png";
-import xImg from "../../assets/x.png";
 
 export const Sidebar: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
