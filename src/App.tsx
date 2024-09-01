@@ -4,11 +4,10 @@ import "./css/appStyle.css";
 
 function App() {
   return (
-    <>
+    <div id="main">
       <Sidebar />
-
       <Dashboard />
-    </>
+    </div>
   );
 }
 

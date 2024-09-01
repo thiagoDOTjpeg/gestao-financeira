@@ -1,123 +1,154 @@
-#main_container {
-  display: flex;
+// #main_container {
+//   display: flex;
 
-  #container_sidebar {
-    display: block;
-    top: 0px;
-    left: 0px;
-    margin: 0 0 0 -250px;
-    width: 250px;
-    height: 100dvh;
+//   #container_sidebar {
+//     margin: 0 0 0 -250px;
+//     width: 250px;
+//     height: 100dvh;
+//     background-color: #4e5361;
+
+//     transition: margin 0.5s;
+
+//     #sidebar {
+//       display: flex;
+//       width: 250px;
+//       flex-direction: column;
+//       align-items: center;
+
+//       h1 {
+//         padding-top: 1rem;
+//         color: #eddbe9;
+//       }
+
+//       img {
+//         padding-top: 5rem;
+//         width: 100px;
+//       }
+
+//       ul {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 2rem;
+
+//         padding-top: 5rem;
+//         li {
+//           list-style: none;
+
+//           a {
+//             text-decoration: none;
+//             color: #eddbe9;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   #container_sidebar.container_open {
+//     margin: 0;
+//   }
+// }
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  #sidebar_content.menu_open {
+    margin: 0;
+  }
+  #sidebar_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 0 0 -270px;
+    width: 270px;
+    height: 100vh;
     background-color: #4e5361;
 
     transition: margin 0.5s;
-
-    #x_img {
-      display: flex;
-      justify-content: end;
-      padding: 1rem;
-      img {
-        width: 50px;
-      }
+    img {
+      margin-top: 5rem;
+      width: 150px;
     }
+    h1 {
+      color: #eddbe9;
+    }
+  }
 
-    #sidebar {
+  #sidebar_menu_list {
+    ul {
       display: flex;
-      width: 250px;
       flex-direction: column;
-      align-items: center;
-
-      h1 {
-        padding-top: 1rem;
-        color: #eddbe9;
-      }
-
-      img {
-        padding-top: 5rem;
-        width: 100px;
-      }
-
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        padding-top: 5rem;
-        li {
-          list-style: none;
-
-          a {
-            text-decoration: none;
-            color: #eddbe9;
-          }
+      gap: 2.5rem;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: #eddbe9;
         }
       }
     }
   }
+  #nav_icon {
+    margin-top: 25px;
+    margin-left: 25px;
 
-  #container_sidebar.container_open {
-    margin: 0;
-  }
-}
-
-#nav_icon {
-  margin-top: 25px;
-  margin-left: 25px;
-
-  width: 60px;
-  height: 45px;
-  position: absolute;
-  transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-
-  span {
-    display: block;
+    width: 60px;
+    height: 45px;
     position: absolute;
-    height: 9px;
-    width: 100%;
-    background: #4e5361;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
-  }
-}
+    cursor: pointer;
 
-#nav_icon {
-  span:nth-child(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  span:nth-child(2) {
-    top: 18px;
+    span {
+      display: flex;
+      position: absolute;
+      height: 9px;
+      width: 60px;
+      background: #4e5361;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
 
-    transform-origin: left center;
+      transform: rotate(0deg);
+      transform: scale(0.75);
+      transition: 0.5s ease-in-out;
+    }
   }
-  span:nth-child(3) {
-    top: 36px;
-    transform-origin: left center;
-  }
-}
 
-#nav_icon.open {
-  span:nth-child(1) {
-    background: #eddbe9;
-    transform: rotate(45deg);
-    top: -3px;
-    left: 8px;
+  #nav_icon {
+    span:nth-child(1) {
+      top: 0px;
+      transform-origin: left center;
+    }
+    span:nth-child(2) {
+      top: 18px;
+
+      transform-origin: left center;
+    }
+    span:nth-child(3) {
+      top: 36px;
+      transform-origin: left center;
+    }
   }
-  span:nth-child(2) {
-    background: #eddbe9;
-    width: 0%;
-    opacity: 0;
-  }
-  span:nth-child(3) {
-    background: #eddbe9;
-    transform: rotate(-45deg);
-    top: 39px;
-    left: 8px;
+
+  #nav_icon.open {
+    span:nth-child(1) {
+      background: #eddbe9;
+      transform: rotate(45deg);
+      top: -3px;
+      left: 8px;
+    }
+    span:nth-child(2) {
+      background: #eddbe9;
+      width: 0%;
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      background: #eddbe9;
+      transform: rotate(-45deg);
+      top: 39px;
+      left: 8px;
+    }
   }
 }

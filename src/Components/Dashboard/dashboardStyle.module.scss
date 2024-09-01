@@ -1,0 +1,13 @@
+#chart_container {
+  display: flex;
+
+  #graphic_chart {
+    margin: 20px;
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+    background-color: #4e5361;
+    height: 200px;
+    width: 400px;
+  }
+}
