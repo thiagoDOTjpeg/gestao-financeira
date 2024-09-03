@@ -60,19 +60,5 @@ export const Sidebar: React.FC = () => {
         </div>
       </div>
     </div>
-
-    // <div id={style.main_container}>
-    //   <div id={style.container_sidebar} ref={containerRef}>
-    //     <aside id={style.sidebar}>
-    //       <img src={logoImg} alt="" />
-    //       <h1>Gestão Financeira</h1>
-
-    //       <div id={style.menu_list}>
-
-    //       </div>
-    //     </aside>
-    //   </div>
-
-    // </div>
   );
 };

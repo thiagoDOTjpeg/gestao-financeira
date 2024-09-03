@@ -1,13 +1,46 @@
 #chart_container {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 4rem;
+
+  max-width: 1800px;
 
   #graphic_chart {
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
     margin-top: 5rem;
-    margin-left: 5rem;
 
     background-color: #4e5361;
-    height: 200px;
+    height: 100px;
     width: 400px;
+    text-align: center;
+
+    border-radius: 25px;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  #graphic_chart.income {
+    color: #157810;
+  }
+  #graphic_chart.outcome {
+    color: #d61341;
+  }
+  #graphic_chart.balance {
+  }
+
+  #chart {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: black;
   }
 }
