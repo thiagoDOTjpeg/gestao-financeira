@@ -3,24 +3,9 @@ import style from "./sidebarStyle.module.scss";
 import logoImg from "../../assets/logo.png";
 
 export const Sidebar: React.FC = () => {
-  const containerSidebar = useRef<HTMLDivElement>(null);
-  const menuButton = useRef<HTMLDivElement>(null);
-
-  function handleOnClickMenu(event: FormEvent) {
-    event.preventDefault();
-    menuButton.current?.classList.toggle(style.open);
-    containerSidebar.current?.classList.toggle(style.menu_open);
-  }
-
   return (
     <div id={style.sidebar}>
-      <div id={style.nav_icon} onClick={handleOnClickMenu} ref={menuButton}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div id={style.sidebar_content} ref={containerSidebar}>
+      <div id={style.sidebar_content}>
         <img src={logoImg} alt="" />
         <h1>Gestão Financeira</h1>
 
